@@ -15,9 +15,9 @@ classDiagram
     class Account {
         - number: String
         - balance: long
-        + deposit(id: String, amount: long): void
-        + withdraw(id: String, amount: long): void
-        + transfer(id: String, targetAccountNumber: String, amount: long): void
+        + deposit(id: String, amount: long): long
+        + withdraw(id: String, amount: long): long
+        + transfer(id: String, targetAccountNumber: String, amount: long): long
         + computeBalances(): long
     }
 
